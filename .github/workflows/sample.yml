@@ -1,10 +1,15 @@
 
 # ワークフロー名
 name: Sample workflow
+# トリガー
 on: push
+# ジョブ
 jobs:
+  # 適当なジョブ名
   sample_build:
+    # 実行環境
     runs-on: ubuntu-latest
+    # アクション
     steps:
       - uses: actions/checkout@v2
       - name: Run a one-line script
